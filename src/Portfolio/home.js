@@ -4,7 +4,7 @@ import Navbar from './Navbar'
 const home = () => {
   return (
     <>
-        <div className=' min-h-full bg-#0D2438'>
+        <div className=' min-h-full '>
             <Navbar/>
         </div>
     </>
