@@ -1,7 +1,7 @@
-import { Home } from 'lucide-react';
 import './App.css';
 import Navbar from './Portfolio/Navbar';
 import Projects from './Portfolio/Projects';
+import Resume from './Portfolio/Resume';
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
     <div className="mx-auto max-w-7xl">
       <Navbar/>
       <Projects/>
+      <Resume/>
     </div>
   </div>
   </>
