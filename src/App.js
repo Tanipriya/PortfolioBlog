@@ -1,4 +1,6 @@
 import './App.css';
+import Contact from './Portfolio/Contact';
+import Footer from './Portfolio/Footer';
 import Navbar from './Portfolio/Navbar';
 import Projects from './Portfolio/Projects';
 import Resume from './Portfolio/Resume';
@@ -11,6 +13,8 @@ function App() {
       <Navbar/>
       <Projects/>
       <Resume/>
+      <Contact/>
+      <Footer/>
     </div>
   </div>
   </>

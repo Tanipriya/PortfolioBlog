@@ -39,6 +39,9 @@ const projectDetails = [
   },
 ];
 
+
+
+
 const Projects = () => {
   return (
     <>
@@ -72,7 +75,6 @@ const Projects = () => {
                   <h1>{item.img}</h1>
                   <div className="p-4 flex flex-col">
                     <h1 className="text-lg font-semibold text-white">
-                      {" "}
                       {item.projectName}
                     </h1>
                     <h1 className="mt-2  text-white">{item.title}</h1>
@@ -82,6 +84,9 @@ const Projects = () => {
             ))}
           </div>
         </div>
+
+
+       
       </div>
     </>
   );
