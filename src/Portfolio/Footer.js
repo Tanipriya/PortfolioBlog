@@ -1,10 +1,9 @@
-import {  AiFillCode, AiFillFacebook, AiFillGithub, AiFillInstagram, AiFillLinkedin, AiOutlineFacebook } from "react-icons/ai";
+import {  AiFillCode, AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 
 import React from 'react'
 
 const Footer = () => {
 
-  const buttonStyling = ` bg-transparent text-5xl  border:blue `;
   return (
     <>
     <div className=' flex flex-col justify-center items-center mt-10 '>

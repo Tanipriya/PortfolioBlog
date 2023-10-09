@@ -5,6 +5,7 @@ import img2 from "../Asset/Best-Desk-Setup-for-Software-Engineers.jpg";
 import img3 from "../Asset/Untitled_design_(12)_1600925482551_1600925492949.avif";
 import img4 from "../Asset/images.jpeg";
 import img5 from "../Asset/TicTacToe_OG-logo.jpg";
+import img6 from "../Asset/maxresdefault.jpg";
 
 const projectDetails = [
   {
@@ -33,38 +34,112 @@ const projectDetails = [
     title: "Software Application",
   },
   {
-    img: <img className="h-[220px] rounded-md" src={img2} alt="" />,
+    img: <img className="h-[220px] rounded-md" src={img6} alt="" />,
     projectName: "Excel to JSON Converter",
     title: "Web Application",
   },
 ];
 
-
-
+const skillsDetails = [
+  {
+    title: "HTML",
+    color: "#11396C",
+  },
+  {
+    title: "CSS",
+    color: "#995DB5",
+  },
+  {
+    title: "Bootstrap",
+    color: "#e36544",
+  },
+  {
+    title: "Python",
+    color: "#3875A9",
+  },
+  {
+    title: "JavaScript",
+    color: "#11396C",
+  },
+  {
+    title: "SQL",
+    color: "#E48E00",
+  },
+  {
+    title: "React Js",
+    color: "#61DBFB",
+  },
+  {
+    title: "Node Js",
+    color: "#76B859",
+  },
+  {
+    title: "Express Js",
+    color: "#D5BA31",
+  },
+  {
+    title: "Flask",
+    color: "#90D2D9",
+  },
+  {
+    title: "MongoDB",
+    color: "#439C34",
+  },
+  {
+    title: "REST API",
+    color: "#0595D4",
+  },
+  {
+    title: "PWA",
+    color: "#6600ED",
+  },
+  {
+    title: "Electron Js",
+    color: "#6600ED",
+  },
+  {
+    title: "Tailwind",
+    color: "#0595D4",
+  },
+];
 
 const Projects = () => {
   return (
     <>
       <div className="p-5">
-        <div className=" flex m-2 mt-5 ">
-          <div className="flex flex-col justify-center items-center ml-5 text-white">
-            <h1 className="font-medium text-2xl">I am Tanisha Priya</h1>
-            <h1> I am Software Developer</h1>
-            <button>Download CV</button>
+        <div className=" flex items-center justify-between m-2 mt-5 pb-7 w-full">
+          <div className="flex flex-col w-1/2 justify-center items-center ml-5 text-white">
+            <h1 className="font-medium text-4xl">I am Tanisha Priya</h1>
+            <h1 className="text-4xl"> I am Software Developer</h1>
+            <button className="w-40 text-xl mt-4 font-bold p-3 rounded-lg bg-gray-400">Download CV</button>
           </div>
-          <div className="flex w-3/4">
+          <div className="flex w-1/2 mr-5 p-5">
             <img
               src={image}
-              className="sm:w-[300px] md:ml-48 md:w-3/4"
+              className=""
               alt=""
             />
           </div>
         </div>
 
+        <div className="text-white justify-center items-center  mt-10 flex flex-col">
+          <h1 className="font-bold text-2xl underline">Skills</h1>
+          <div className="flex flex-wrap mt-10 w-3/4 gap-4">
+            {skillsDetails.map((item) => (
+              <div
+                style={{ backgroundColor: `${item.color}` }}
+                className=" bg-rose-600 rounded-lg p-2 w-40 text-center"
+              >
+                <button>{item.title}</button>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div>
           <div className="mt-20 mb-10">
-            <h1 className="text-white text-xl font-medium text-center underline">
-              Projects Portfolio
+            <h1 className="text-white text-3xl font-bold text-center underline">
+              Projects
             </h1>
           </div>
 
@@ -84,9 +159,6 @@ const Projects = () => {
             ))}
           </div>
         </div>
-
-
-       
       </div>
     </>
   );

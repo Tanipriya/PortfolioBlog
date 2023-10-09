@@ -1,4 +1,5 @@
 import React from "react";
+import { AiFillCaretDown, AiFillDownSquare, AiOutlineArrowDown } from "react-icons/ai";
 
 const techExperience = [
   {
@@ -51,15 +52,79 @@ const techExperience = [
 
 const certificate = [
   {
-    name: "python",
-    Link: "https://certificates.ccbp.in/intensive/introduction-to-databases?id=DFEKEFMEZK",
-    topic: "Querying with SQL, ",
+    name: "Python",
+    Link: "https://certificates.ccbp.in/intensive/programming-foundations?id=HVYDFUBFVO",
+    topic: "Learned foundations with Python and Developer Fundamentals Solved several problems covering concepts like Functions, Recursion, Strings, Lists, Dictionaries, Sets, Tuples, Loops & OOP Concepts etc.",
+    color: "#3875A9",
+    bgColor: '#1b4569'
   },
+  {
+    name: "SQL",
+    Link: "https://certificates.ccbp.in/intensive/introduction-to-databases?id=DFEKEFMEZK",
+    topic: "Learned how to Querying with SQL, Aggregations and Group By, Modelling Database and Joins. Experience with Relational and Non-Relational Databases  ",
+    color: '#E48E00',
+    bgColor: '#9e6c19'
+  },
+  
+  {
+    name: "Responsive Web Design using Flexbox",
+    Link: "https://certificates.ccbp.in/intensive/flexbox?id=AFPZTYEGCO",
+    topic: "learned CSS Flexbox, CSS Media Queries, CSS Box Sizing, Developing Responsive Layouts and built Food Restaurant Websites and  Landing Page. ",
+    color: '#995DB5',
+    bgColor: '#80328f'
+
+  },
+  
+  {
+    name: "Build Static Website",
+    Link: "https://certificates.ccbp.in/intensive/static-website?id=BKVYWTLEKT",
+    topic: "Learned Basics of HTML5, CSS3, CSS Box Model, Introduction of Bootstrap and Flex Layout, Bootstrap Utility Classes and Components, Website Layout Development and built websites like tourism and etc ",
+    color: '#e36544',
+    bgColor: '#b84f3e'
+  },
+  {
+    name: "Developer Foundations",
+    Link: "https://certificates.ccbp.in/intensive/developer-foundations?id=LHFIHOSLPU",
+    topic: "Learned Fundamentals of Computer Science, Work with command line, ES6 & ES7 & ES8 Features and Collaborating with Git ",
+    color: '#11396C',
+    bgColor: '#426ca1'
+
+  },
+  {
+    name: "Build Responsive Website",
+    Link: "https://certificates.ccbp.in/intensive/responsive-website?id=ZJXIVMSDIM",
+    topic: "Learns how to style your site quickly with Bootstrap. I also learn how to add logic to your CSS styles and extend them with Sass. Later, I also built a TO-Do list using CURD methods other Websites.",
+    color: '#D5BA31',
+    bgColor: '#ad9a40'
+  },
+  {
+    name: "Programming Using Python",
+    Link: "https://olympus1.mygreatlearning.com/course_certificate/CAADHPEZ",
+    topic: "Learned foundations with Python and Developer Fundamentals Solved several problems covering concepts like Functions, Recursion, Strings, Lists, Dictionaries, Sets, Tuples, Loops & OOP Concepts etc. ",
+    color: '#027DA9',
+    bgColor: '#075470'
+  },
+  {
+    name: "JavaScript Essentials",
+    Link: "https://olympus1.mygreatlearning.com/course_certificate/CAADHPEZ",
+    topic: "Built Static, Responsive, and Dynamic Web Applications from scratch using JS Built applications like TodoList using HTML, CSS, Bootstrap, JavaScript ",
+    color: '#D5BA31',
+    bgColor: '#ad9a40'
+  },
+  {
+    name: "Dynamic Web Application",
+    Link: "https://olympus1.mygreatlearning.com/course_certificate/CAADHPEZ",
+    topic:"Learned how to write back end apps with Node.js and npm. I also built web applications with the Express framework, and build some mini-projects ",
+    color: '#027DA9',
+    bgColor: '#075470'
+  }
 ];
 
 const Resume = () => {
+
+    
   return (
-    <>
+    <div className="w-full flex items-center justify-center flex-col">
       <div className=" text-white ">
         <div className="flex w-full p-20 items-center justify-center ">
           <div className="flex   flex-col  w-10/12   p-5">
@@ -110,16 +175,21 @@ const Resume = () => {
         </div>
       </div>
 
-      <div>
+      <div className="flex flex-col items-center justify-center mb-20">
+        <h1  className="text-white  font-medium mb-10 text-4xl underline ">Certificates</h1>
+      <div className="flex flex-wrap   justify-center">
         {certificate.map((item) => (
-          <div className="text-white">
-            {item.name}
-            <h1>Certificate Link: {item.Link}</h1>
-            <h1>{item.topic}</h1>
+          <div  className= "bg-[#1E3851] shadow-xl w-80 h-auto text-white mt-5 mr-10 p-4 rounded-lg" >
+            <h1 className="font-medium text-lg"><span className="font-medium text-lg">Name: </span>{item.name}</h1>
+            <p className="text-xs">{item.topic}</p>
+            <div className="flex mt-2">
+            <button> <a href={item.Link} target="_blank" rel="noopener noreferrer" className=""><span style={{backgroundColor: `${item.bgColor}`}} className="flex  p-1 gap-1 rounded-lg  items-center"> <AiFillCaretDown/> Download Certificate</span></a></button>
+            </div>
           </div>
         ))}
       </div>
-    </>
+      </div>
+    </div>
   );
 };
 
