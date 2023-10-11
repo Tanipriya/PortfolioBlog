@@ -1,11 +1,12 @@
 import React from "react";
-import image from "../Asset/undraw_software_engineer_re_tnjc.svg";
 import img1 from "../Asset/How-to-Implement-CRUD-Operations-on-SQL-Table-Using-External-Content-Type-in-SharePoint.jpg";
 import img2 from "../Asset/Best-Desk-Setup-for-Software-Engineers.jpg";
 import img3 from "../Asset/Untitled_design_(12)_1600925482551_1600925492949.avif";
 import img4 from "../Asset/images.jpeg";
 import img5 from "../Asset/TicTacToe_OG-logo.jpg";
 import img6 from "../Asset/maxresdefault.jpg";
+import {  AiOutlineDownload } from "react-icons/ai";
+import About from "./About";
 
 const projectDetails = [
   {
@@ -106,22 +107,9 @@ const skillsDetails = [
 const Projects = () => {
   return (
     <>
-      <div className="p-5">
-        <div className=" flex items-center justify-between m-2 mt-5 pb-7 w-full">
-          <div className="flex flex-col w-1/2 justify-center items-center ml-5 text-white">
-            <h1 className="font-medium text-4xl">I am Tanisha Priya</h1>
-            <h1 className="text-4xl"> I am Software Developer</h1>
-            <button className="w-40 text-xl mt-4 font-bold p-3 rounded-lg bg-gray-400">Download CV</button>
-          </div>
-          <div className="flex w-1/2 mr-5 p-5">
-            <img
-              src={image}
-              className=""
-              alt=""
-            />
-          </div>
-        </div>
-
+   <div className="p-5">
+   
+      <About/>
         <div className="text-white justify-center items-center  mt-10 flex flex-col">
           <h1 className="font-bold text-2xl underline">Skills</h1>
           <div className="flex flex-wrap mt-10 w-3/4 gap-4">

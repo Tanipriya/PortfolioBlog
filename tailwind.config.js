@@ -10,8 +10,14 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
-    
-    extend: {},
+
+    extend: {
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+        poppins: ["Poppins", "serif"],
+        Montserrat : ["Montserrat","sans-serif"]
+      },
+    },
   },
   plugins: [],
 }

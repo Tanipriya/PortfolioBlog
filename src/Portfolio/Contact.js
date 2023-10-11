@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <>
       <div className="text-white text-center ">
-        <h1 className="font-medium text-2xl mb-2">Contact Form</h1>
+        <h1 className="font-medium text-3xl underline mb-10">Contact Form</h1>
         <div class="w-full flex justify-center items-center p-3">
           <div className="w-7/8 sm:border  md:rounded-lg p-10">
             <form className=" flex flex-col" onSubmit={onSubmitForm}>
@@ -25,8 +25,7 @@ const Contact = () => {
                     placeholder="Enter Your name"
                     id="name"
                     name="customerName"
-                    // value={customerForm.customerName}
-                    // onChange={onChangeHandle}
+                   
                   />
                 </div>
                 <div className="flex flex-col items-start m-2 w-full sm:w-auto">
@@ -42,8 +41,7 @@ const Contact = () => {
                     id="number"
                     placeholder="Enter Your Email"
                     name="customerNumber"
-                    // value={customerForm.customerNumber}
-                    // onChange={onChangeHandle}
+                    
                   />
                 </div>
               </div>
@@ -61,8 +59,6 @@ const Contact = () => {
                   name="employeeId"
                   placeholder="Subject"
 
-                  // value={customerForm.employeeId}
-                  // onChange={onChangeHandle}
                 />
               </div>
 
@@ -80,10 +76,9 @@ const Contact = () => {
                   id="address"
                   rows=""
                   cols=""
-                  placeholder="Enter Customer Address"
+                  placeholder="Enter Your Message"
                   name="customerAddress"
-                  // value={customerForm.customerAddress}
-                  // onChange={onChangeHandle}
+               
                 ></textarea>
               </div>
 
