@@ -31,7 +31,7 @@ const About = () => {
       <div className="bg-[#0D2438] w-full flex  justify-center mb-20">
         <div className="p-2  gap-5 text-white flex  items-center ">
           <div className="flex w-2/5 flex-col p-2">
-            <img src={img1} />
+            <img src={img1} alt=""/>
            
           </div>
           
