@@ -5,7 +5,6 @@ import img3 from "../Asset/Untitled_design_(12)_1600925482551_1600925492949.avif
 import img4 from "../Asset/images.jpeg";
 import img5 from "../Asset/TicTacToe_OG-logo.jpg";
 import img6 from "../Asset/maxresdefault.jpg";
-import {  AiOutlineDownload } from "react-icons/ai";
 import About from "./About";
 
 const projectDetails = [

@@ -35,7 +35,7 @@ const About = () => {
            
           </div>
           
-          <div className="flex font-roboto font-medium text-base  flex-col  w-6/12 p-2">
+          <div className="flex font-roboto font-medium text-lg ml-8 mt-5  flex-col  w-6/12 ">
             <p>
               I am a passionate Software Developer currently working at Garuda
               Mart India Pvt. Ltd. as a part of their dynamic team. My role
@@ -44,10 +44,10 @@ const About = () => {
               integral to the company's operations. I bring a wealth of
               experience as a Software Developer with a strong proficiency in a
               range of technologies, including Python, Flask, React.js, REST
-              API, JavaScript, HTML, and CSS. I specialize in crafting robust
+              API, JavaScript, HTML, CSS and PWA. I specialize in crafting robust
               and scalable solutions, with a primary focus on designing and
-              optimizing inventory management systems. As a full-stack
-              developer, I take pride in ensuring a seamless integration of
+              optimizing inventory management systems and Software Billing. 
+              As a full-stack developer, I take pride in ensuring a seamless integration of
               front-end and back-end components. I thrive on solving complex
               problems and am dedicated to delivering high-quality software
               solutions that meet the unique needs. <br/>
