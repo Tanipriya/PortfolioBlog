@@ -155,7 +155,7 @@ const Resume = () => {
                       <div className="flex w-5 h-1 border-t-[15px] border-t-transparent border-r-[15px] border-r-[#1e3851] border-b-[10px] border-b-transparent"></div>
                       <div
                         className=" bg-[#1e3851] w-10/12 rounded-r-lg  border-b-4 border-b-blue-400 p-4">
-                        <h1 className="font-medium text-2xl mt-1 ">
+                        <h1 className="font-medium text-2xl mt-1  underline underline-offset-4">
                           {item.title}
                         </h1>
                         <p className="text-[10px]">{item.experience}</p>

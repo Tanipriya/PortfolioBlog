@@ -2,31 +2,33 @@ import React from "react";
 import { AiOutlineDownload } from "react-icons/ai";
 import image from "../Asset/undraw_software_engineer_re_tnjc.svg";
 import img1 from "../Asset/undraw_About_me_re_82bv-removebg-preview.png";
+import "./About.css"
 
 
 const About = () => {
   return (
     <>
-      <div className="bg-[#0D2438] p-5">
+      <div className="bg-[#0D2438] p-5 font-roboto">
         <div className=" flex items-center justify-between m-2 mt-5 pb-7 w-full">
           <div className="flex flex-col w-1/2 justify-center items-start ml-5 text-white">
             <h1 className="font-medium text-4xl mb-4">I am Tanisha Priya</h1>
-            <h1 className="text-4xl mb-6"> A Software Developer</h1>
-            <button className="w-48 text-xl mt-4 font-bold p-3 rounded-lg bg-gray-400">
+            <h1 className="text-4xl mb-6"> A Software <span className="text-[#6C63FF]">Developer.</span></h1>
+            <button className="pl-7 pr-7 pt-2 pb-2 text-xl mt-4 font-medium  rounded-lg bg-[#6C63FF] flex items-center justify-center hover:bg-[#8680ec]">
               {" "}
-              <span className="flex  p-1 gap-3 rounded-lg  items-center">
+              <AiOutlineDownload size={25} />
+              <span className="flex  p-1  rounded-lg  items-center ml-2">
                 {" "}
-                <AiOutlineDownload size={20} /> Download CV
+                 Download CV
               </span>
             </button>
           </div>
           <div className="flex w-1/2 mr-5 p-5">
-            <img src={image} className="" alt="" />
+            <img src={image} className="aboutimg" alt="" />
           </div>
         </div>
       </div>
 
-      <h1 className="text-center text-white text-3xl font-semibold underline mb-10">About Me</h1>
+      <h1 className="text-center text-white text-3xl font-semibold underline underline-offset-8">About Me</h1>
 
       <div className="bg-[#0D2438] w-full flex  justify-center mb-20">
         <div className="p-2  gap-5 text-white flex  items-center ">
@@ -35,8 +37,8 @@ const About = () => {
            
           </div>
           
-          <div className="flex font-roboto font-medium text-lg ml-8 mt-5  flex-col  w-6/12 ">
-            <p>
+          <div className="flex  ml-8 mt-5  flex-col  w-6/12 ">
+            <p className="font-medium text-base">
               I am a passionate Software Developer currently working at Garuda
               Mart India Pvt. Ltd. as a part of their dynamic team. My role
               primarily revolves around two exciting projects: Warehouse
