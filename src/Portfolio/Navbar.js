@@ -38,9 +38,9 @@ const Navbar = () => {
             <span>
               <img className="w-[60px]  rounded-3xl" src={imgLogo} alt="" />
             </span>
-            <span className="font-bold text-lg">Tanisha Priya</span>
+            <span className="font-bold lg:text-lg md:text-lg sm:text:md xs:text:sm">Tanisha Priya</span>
           </div>
-          <div className="md:hidden  lg:block flex items-center">
+          <div className="md:hidden sm:hidden xs:hidden  lg:block flex items-center">
             <div className="  inline-flex items-center justify-center">
               {menuItems.map((item) => (
                 <NavLink
@@ -63,7 +63,7 @@ const Navbar = () => {
           </div>
           {isMenuOpen && (
             <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden">
-              <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+              <div className="divide-y-2 divide-gray-50 rounded-lg bg-blue-700 shadow-lg ring-1 ring-black ring-opacity-5">
                 <div className="px-5 pb-6 pt-5">
                   <div className="flex items-center justify-between">
                     <div className="inline-flex items-center space-x-2">

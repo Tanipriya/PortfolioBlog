@@ -135,8 +135,7 @@ const Resume = () => {
       <h1 className="text-white font-semibold text-4xl mt-10 underline">
         Resume
       </h1>
-      <div className=" text-white ">
-        <div className="flex w-full p-10 items-center justify-center ">
+        <div className=" text-white flex w-full p-10 items-center justify-center ">
           <div className="flex flex-col w-[1000px]  p-5">
             <div>
               {techExperience.map((item, index) => {
@@ -169,7 +168,6 @@ const Resume = () => {
             </div>
           </div>
         </div>
-      </div>
 
       <div className="flex flex-col items-center justify-center mt-10 mb-20">
         <h1 className="text-white  font-medium mb-10 text-4xl underline npm start">
