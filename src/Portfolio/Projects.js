@@ -6,12 +6,10 @@ import img4 from "../Asset/images.jpeg";
 import img5 from "../Asset/TicTacToe_OG-logo.jpg";
 import img6 from "../Asset/maxresdefault.jpg";
 import About from "./About";
-import { useNavigate } from "react-router-dom";
 
 
 const Projects = () => {
 
-  const navigate= useNavigate()
 
 const projectDetails = [
   {
