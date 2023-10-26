@@ -10,9 +10,9 @@ const About = () => {
     <>
       <div className="bg-[#0D2438] p-5 font-roboto">
         <div className=" flex items-center justify-between m-2 mt-5 pb-7 w-full">
-          <div className="flex flex-col w-1/2 justify-center items-start ml-5 text-white">
-            <h1 className="font-medium text-4xl mb-4">I am Tanisha Priya</h1>
-            <h1 className="text-4xl mb-6"> A Software <span className="text-[#6C63FF]">Developer.</span></h1>
+          <div className="flex flex-col w-1/2 justify-center items-start ml-5 text-white xs:w-full">
+            <h1 className="font-medium text-4xl mb-4 xs:text-xl ">I am Tanisha Priya</h1>
+            <h1 className="text-4xl mb-6 xs:text-2xl" > A Software <span className="text-[#6C63FF]">Developer.</span></h1>
             <button className="pl-7 pr-7 pt-2 pb-2 text-xl mt-4 font-medium  rounded-lg bg-[#6C63FF] flex items-center justify-center hover:bg-[#8680ec]">
               {" "}
               <AiOutlineDownload size={25} />
@@ -23,7 +23,7 @@ const About = () => {
             </button>
           </div>
           <div className="flex w-1/2 mr-5 p-5">
-            <img src={image} className="aboutimg" alt="" />
+            <img src={image} className="aboutimg block xs:hidden" alt="" />
           </div>
         </div>
       </div>
@@ -32,13 +32,13 @@ const About = () => {
 
       <div className="bg-[#0D2438] w-full flex  justify-center mb-20">
         <div className="p-2  gap-5 text-white flex  items-center ">
-          <div className="flex w-2/5 flex-col p-2">
+          <div className="flex w-2/5 flex-col p-2 ">
             <img src={img1} alt=""/>
            
           </div>
           
-          <div className="flex  ml-8 mt-5  flex-col  w-6/12 ">
-            <p className="font-medium text-base">
+          <div className="flex  ml-8 mt-5  flex-col  w-6/12 xs:w-full ">
+            <p className="font-medium text-base xs:text-xs ">
               I am a passionate Software Developer currently working at Garuda
               Mart India Pvt. Ltd. as a part of their dynamic team. My role
               primarily revolves around two exciting projects: Warehouse
@@ -56,6 +56,7 @@ const About = () => {
              
             </p>
           </div>
+        
         </div>
       </div>
     </>

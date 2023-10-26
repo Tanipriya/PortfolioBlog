@@ -6,7 +6,12 @@ import img4 from "../Asset/images.jpeg";
 import img5 from "../Asset/TicTacToe_OG-logo.jpg";
 import img6 from "../Asset/maxresdefault.jpg";
 import About from "./About";
-import { AiFillGithub } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
+
+
+const Projects = () => {
+
+  const navigate= useNavigate()
 
 const projectDetails = [
   {
@@ -29,7 +34,7 @@ const projectDetails = [
 
   },
   {
-    img: <img className="h-[220px] rounded-md" src={img3} alt="" />,
+    img: <img className="h-[220px] rounded-md" src={img3} alt="" navigate = '/https://tanipriya.github.io/garudaMart/'/>,
     projectName: "Wikipedia Search",
     language: [{
       title: "JavaScript",
@@ -177,7 +182,9 @@ const skillsDetails = [
   },
 ];
 
-const Projects = () => {
+
+
+
   return (
     <>
    <div className="p-5">
@@ -210,7 +217,7 @@ const Projects = () => {
                 
                 <div className="w-80 object-cover">
                   
-                  <h1>{item.img }   </h1><AiFillGithub className="left-50  -right-1/4 bottom-40"/> 
+                  <h1>{item.img }   </h1>
                   <div className="p-4 flex flex-col">
                     <h1 className="text-xl mb-1 font-semibold text-white">
                       {item.projectName}
