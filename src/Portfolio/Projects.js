@@ -188,15 +188,15 @@ const skillsDetails = [
    <div className="p-5">
    
       <About/>
-        <div className="text-white justify-center items-center  mt-10 flex flex-col">
+        <div className="text-white justify-center items-center   mt-10 flex flex-col">
           <h1 className="font-bold text-2xl underline underline-offset-8">Skills</h1>
-          <div className="flex flex-wrap mt-10 w-3/4  gap-4">
+          <div className="flex flex-wrap  mt-10 w-3/4 gap-4">
             {skillsDetails.map((item) => (
               <div
                 style={{ backgroundColor: `${item.color}` }}
-                className=" bg-rose-600 rounded-lg p-2 md:w-40 xs:w-24 text-center"
+                className=" bg-rose-600 rounded-lg p-2 w-28 md:w-40  text-center"
               >
-                <button className="xs:text-sm">{item.title}</button>
+                <button>{item.title}</button>
               </div>
             ))}
           </div>
@@ -213,7 +213,7 @@ const skillsDetails = [
             {projectDetails.map((item) => (
               <div className="h-84 bg-[#1E3851] shadow-2xl border rounded-md  flex flex-wrap  m-4 ">
                 
-                <div className="w-80 object-cover">
+                <div className="w-64 sm:w-80 object-cover">
                   
                   <h1>{item.img }   </h1>
                   <div className="p-4 flex flex-col">

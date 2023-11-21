@@ -131,16 +131,16 @@ const Resume = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="w-full flex items-center justify-center flex-col">
+    <div className="w-full h-full flex items-center justify-center flex-col">
       <h1 className="text-white font-semibold lg:text-4xl md:text-3xl xs:text-2xl mt-10 underline">
         Resume
       </h1>
-        <div className=" text-white flex w-full p-10 items-center justify-center ">
-          <div className="flex flex-col lg:w-[1000px]  p-5">
+        <div className=" text-white flex w-full h-full md:p-10 items-center justify-center ">
+          <div className="flex flex-col w-[1000px] xl:w-full  p-0 sm:p-2 md:p-5">
             <div>
               {techExperience.map((item, index) => {
                 return (
-                  <div className="flex m-5 ">
+                  <div className="flex m-5">
                     <div className="flex lg:ml-10  flex-col items-center justify-center">
                       <h1
                         className="bg-sky-500 p-2 rounded-full text-xl outline outline-slate-200 "
@@ -153,7 +153,7 @@ const Resume = () => {
                     <div className="flex lg:ml-10 md:ml-10 sm:ml-6 w-full" >
                       <div className="flex w-5 h-1 border-t-[15px] border-t-transparent border-r-[15px] border-r-[#1e3851] border-b-[10px] border-b-transparent"></div>
                       <div
-                        className=" bg-[#1e3851] lg:w-10/12 md:w-10/12 sm:w-[500px] xs:w-[230px] rounded-r-lg  border-b-4 border-b-blue-400 p-4">
+                        className=" bg-[#1e3851]  rounded-r-lg  border-b-4 border-b-blue-400 p-4">
                         <h1 className="font-medium lg:text-2xl md:text-2xl sm:text-xl xs:text-md mt-1  underline underline-offset-4">
                           {item.title}
                         </h1>

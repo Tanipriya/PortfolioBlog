@@ -10,19 +10,19 @@ const About = () => {
     <>
       <div className="bg-[#0D2438] p-5 font-roboto">
         <div className=" flex items-center justify-between m-2 mt-5 pb-7 w-full">
-          <div className="flex flex-col w-1/2 justify-center items-start ml-5 text-white xs:w-full">
+          <div className="flex flex-col w-1/2 justify-center items-start sm::ml-5 text-white xs:w-full">
             <h1 className="font-medium md:text-3xl mb-4 xs:text-xl lg:text-4xl">I am Tanisha Priya</h1>
             <h1 className="text-4xl mb-6 xs:text-2xl" > A Software <span className="text-[#6C63FF]">Developer.</span></h1>
-            <button className="pl-7 pr-7 pt-2 pb-2 text-xl mt-4 font-medium  rounded-lg bg-[#6C63FF] flex items-center justify-center hover:bg-[#8680ec]">
-              {" "}
+            <button className=" md:pl-7 md:pr-7 pt-2 pb-2 text-xl mt-4 font-medium  rounded-lg bg-[#6C63FF] flex items-center justify-center hover:bg-[#8680ec]">
+             
               <AiOutlineDownload size={25} />
-              <span className="flex  p-1  rounded-lg  items-center ml-2">
-                {" "}
+              <span className="flex  p-1   rounded-lg  items-center ml-2">
+                
                  Download CV
               </span>
             </button>
           </div>
-          <div className="flex w-1/2 mr-5 p-5">
+          <div className="flex w-6/2 mr-5 p-5">
             <img src={image} className="aboutimg " alt="" />
           </div>
         </div>
@@ -31,14 +31,14 @@ const About = () => {
       <h1 className="text-center text-white text-3xl font-semibold underline underline-offset-8">About Me</h1>
 
       <div className="bg-[#0D2438] w-full flex  justify-center mb-20">
-        <div className="p-2  gap-5 text-white flex  items-center ">
-          <div className="flex w-3/5 flex-col p-2 ">
-            <img src={img1} alt=""/>
+        <div className="  gap-5 text-white flex  items-center ">
+          <div className="flex xs:w-1/2  md:w-1/2 flex-col p-2 ">
+            <img src={img1} alt="" className=""/>
            
           </div>
           
-          <div className="flex  ml-8 mt-5  flex-col  w-6/12 xs:w-full ">
-            <p className="font-medium lg:text-base  xs:text-xs ">
+          <div className="flex  ml-8 mt-5  flex-col  xs:w-1/2  ">
+            <p className="font-medium lg:text-base  xs:text-[10px]">
               I am a passionate Software Developer currently working at Garuda
               Mart India Pvt. Ltd. as a part of their dynamic team. My role
               primarily revolves around two exciting projects: Warehouse
