@@ -173,10 +173,10 @@ const Resume = () => {
         <h1 className="text-white  font-medium mb-10 text-4xl underline npm start">
           Certificates
         </h1>
-        <div className="flex flex-wrap   justify-center">
+        <div className="flex flex-wrap ml-10 sm:ml-0 justify-center">
           {certificate.map((item, index) => (
             <div
-              className="bg-[#1E3851] shadow-xl w-80 h-auto text-white mt-5 mr-10 p-4 rounded-lg    border-b-4 border-b-blue-400"
+              className="bg-[#1E3851] shadow-xl w-64 sm:w-80 h-auto text-white mt-5 mr-10 p-4 rounded-lg  border-b-4 border-b-blue-400"
               key={index}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
@@ -209,8 +209,8 @@ const Resume = () => {
               </div>
             </div>
           ))}
+          </div>
         </div>
-      </div>
     </div>
   );
 };

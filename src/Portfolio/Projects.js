@@ -213,17 +213,17 @@ const skillsDetails = [
             {projectDetails.map((item) => (
               <div className="h-84 bg-[#1E3851] shadow-2xl border rounded-md  flex flex-wrap  m-4 ">
                 
-                <div className="w-64 sm:w-80 object-cover">
+                <div className="w-56 sm:w-80 object-cover">
                   
                   <h1>{item.img }   </h1>
-                  <div className="p-4 flex flex-col">
+                  <div className="p-2 sm:p-4 flex flex-col">
                     <h1 className="text-xl mb-1 font-semibold text-white">
                       {item.projectName}
                     </h1>
                     <div className="flex ">
                       {
                         item.language.map((lang, index) => (
-                          <button className="mt-2 rounded-md w-24 mr-2 p-1 bg-[#496e97] text-white" key={index}>{lang.title}</button>
+                          <button className="mt-2 text-xs sm:text-base rounded-md w-24 mr-2 p-1 bg-[#496e97] text-white" key={index}>{lang.title}</button>
 
                         ))
                       }
