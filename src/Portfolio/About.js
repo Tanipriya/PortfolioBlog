@@ -32,13 +32,13 @@ const About = () => {
 
       <div className="bg-[#0D2438] w-full flex  justify-center mb-20">
         <div className="p-2  gap-5 text-white flex  items-center ">
-          <div className="flex w-2/5 flex-col p-2 ">
+          <div className="flex w-3/5 flex-col p-2 ">
             <img src={img1} alt=""/>
            
           </div>
           
           <div className="flex  ml-8 mt-5  flex-col  w-6/12 xs:w-full ">
-            <p className="font-medium text-base xs:text-xs ">
+            <p className="font-medium lg:text-base  xs:text-xs ">
               I am a passionate Software Developer currently working at Garuda
               Mart India Pvt. Ltd. as a part of their dynamic team. My role
               primarily revolves around two exciting projects: Warehouse

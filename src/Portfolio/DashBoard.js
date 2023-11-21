@@ -9,7 +9,7 @@ const DashBoard = () => {
   return (
     <>
       <div className="min-h-[100vh] bg-[#0D2438]">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto w-full">
           <Navbar />
           <Projects />
           <Resume />

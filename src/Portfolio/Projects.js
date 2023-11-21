@@ -190,13 +190,13 @@ const skillsDetails = [
       <About/>
         <div className="text-white justify-center items-center  mt-10 flex flex-col">
           <h1 className="font-bold text-2xl underline underline-offset-8">Skills</h1>
-          <div className="flex flex-wrap mt-10 w-3/4 gap-4">
+          <div className="flex flex-wrap mt-10 w-3/4  gap-4">
             {skillsDetails.map((item) => (
               <div
                 style={{ backgroundColor: `${item.color}` }}
-                className=" bg-rose-600 rounded-lg p-2 w-40 text-center"
+                className=" bg-rose-600 rounded-lg p-2 md:w-40 xs:w-24 text-center"
               >
-                <button>{item.title}</button>
+                <button className="xs:text-sm">{item.title}</button>
               </div>
             ))}
           </div>

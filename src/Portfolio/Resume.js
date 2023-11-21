@@ -132,16 +132,16 @@ const Resume = () => {
 
   return (
     <div className="w-full flex items-center justify-center flex-col">
-      <h1 className="text-white font-semibold text-4xl mt-10 underline">
+      <h1 className="text-white font-semibold lg:text-4xl md:text-3xl xs:text-2xl mt-10 underline">
         Resume
       </h1>
         <div className=" text-white flex w-full p-10 items-center justify-center ">
-          <div className="flex flex-col w-[1000px]  p-5">
+          <div className="flex flex-col lg:w-[1000px]  p-5">
             <div>
               {techExperience.map((item, index) => {
                 return (
                   <div className="flex m-5 ">
-                    <div className="flex ml-10  flex-col items-center justify-center">
+                    <div className="flex lg:ml-10  flex-col items-center justify-center">
                       <h1
                         className="bg-sky-500 p-2 rounded-full text-xl outline outline-slate-200 "
                         style={{ background: `${item.color}` }}  
@@ -150,16 +150,16 @@ const Resume = () => {
                       </h1>
                       <div className="w-[2px] h-full bg-white"></div>
                     </div>
-                    <div className="flex ml-10 w-full" >
+                    <div className="flex lg:ml-10 md:ml-10 sm:ml-6 w-full" >
                       <div className="flex w-5 h-1 border-t-[15px] border-t-transparent border-r-[15px] border-r-[#1e3851] border-b-[10px] border-b-transparent"></div>
                       <div
-                        className=" bg-[#1e3851] w-10/12 rounded-r-lg  border-b-4 border-b-blue-400 p-4">
-                        <h1 className="font-medium text-2xl mt-1  underline underline-offset-4">
+                        className=" bg-[#1e3851] lg:w-10/12 md:w-10/12 sm:w-[500px] xs:w-[230px] rounded-r-lg  border-b-4 border-b-blue-400 p-4">
+                        <h1 className="font-medium lg:text-2xl md:text-2xl sm:text-xl xs:text-md mt-1  underline underline-offset-4">
                           {item.title}
                         </h1>
                         <p className="text-[10px]">{item.experience}</p>
-                        <h1 className="font-medium text-lg">{item.company}</h1>
-                        <p className="text-sm">{item.description}</p>
+                        <h1 className=" font-medium lg:text-lg md:text-md sm:text-[16px] xs:text-[14px] ">{item.company}</h1>
+                        <p className="lg:text-sm md:text-sm sm:text-[12px]  xs:text-[9px]  xs:font-normal">{item.description}</p>
                       </div>
                     </div>
                   </div>
