@@ -8,8 +8,8 @@ const Contact = () => {
     <>
       <div className="text-white text-center ">
         <h1 className="font-medium text-3xl underline mb-10">Contact Form</h1>
-        <div class="w-full flex justify-center items-center p-3">
-          <div className="w-7/8 sm:border  md:rounded-lg p-10">
+        <div class=" flex justify-center items-center p-3">
+          <div className=" sm:border  md:rounded-lg p-10">
             <form className=" flex flex-col" onSubmit={onSubmitForm}>
               <div className="flex flex-wrap">
                 <div className=" flex flex-col items-start m-2 w-full sm:w-auto">
@@ -20,7 +20,7 @@ const Contact = () => {
                     Customer Name
                   </label>
                   <input
-                    class="flex h-10 w-full sm:w-60 md:w-80 rounded-md border mt-3 border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-slate-300"
+                    class="flex h-10 xs:w-full sm:w-60 md:w-80 rounded-md border mt-3 border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-slate-300"
                     type="text"
                     placeholder="Enter Your name"
                     id="name"
@@ -36,7 +36,7 @@ const Contact = () => {
                     Email Id
                   </label>
                   <input
-                    class="flex h-10  w-full sm:w-60 md:w-80 rounded-md border mt-3 border-gray-300  bg-transparent px-3 py-2 text-sm placeholder:text-slate-300"
+                    class="flex h-10  xs:w-full sm:w-60 md:w-80 rounded-md border mt-3 border-gray-300  bg-transparent px-3 py-2 text-sm placeholder:text-slate-300"
                     type="email"
                     id="number"
                     placeholder="Enter Your Email"
@@ -45,7 +45,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              <div className="flex flex-col items-start m-2 w-full sm:w-auto">
+              <div className="flex flex-col items-start m-2 w-full ">
                 <label
                   class="text-sm  mr-3 font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                   htmlFor="number"
@@ -53,7 +53,7 @@ const Contact = () => {
                   Subject
                 </label>
                 <input
-                  class="flex h-10 w-full sm:w-60 md:w-[660px] rounded-md border mt-3 border-gray-300  bg-transparent px-3 py-2 text-sm placeholder:text-slate-300"
+                  class="flex h-10 w-full  md:w-[660px] rounded-md border mt-3 border-gray-300  bg-transparent px-3 py-2 text-sm placeholder:text-slate-300"
                   type="text"
                   id="billDate"
                   name="employeeId"
@@ -62,7 +62,7 @@ const Contact = () => {
                 />
               </div>
 
-              <div className="flex flex-col items-start m-2 mt-3 w-full sm:w-auto">
+              <div className="flex flex-col items-start m-2 mt-3 w-full ">
                 <label
                   class="text-sm  font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                   htmlFor="address"
@@ -71,7 +71,7 @@ const Contact = () => {
                 </label>
                 <textarea
                   className=" flex rounded-md border border-gray-300  bg-transparent px-3 py-2 text-sm  mt-3
-               placeholder:text-slate-300 md:w-[660px] sm:w-6/12 h-20"
+               placeholder:text-slate-300 md:w-[660px] w-full h-20"
                   type="textarea"
                   id="address"
                   rows=""

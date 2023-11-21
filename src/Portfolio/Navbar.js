@@ -56,7 +56,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="ml-2 mt-2 block lg:hidden">
+          <div className="ml-2 mt-2  lg:hidden">
             <div className="ml-2 lg:hidden">
               <Menu onClick={toggleMenu} className="h-6 w-6 cursor-pointer" />
             </div>
@@ -81,7 +81,7 @@ const Navbar = () => {
                           fill="black"
                         />
                       </span>
-                      <span className="font-bold">DevUI</span>
+                      <span className="font-bold">Tanisha Priya</span>
                     </div>
                     <div className="-mr-2">
                       <button
@@ -95,7 +95,7 @@ const Navbar = () => {
                     </div>
                   </div>
                   <div className="mt-6">
-                    <nav className="grid gap-y-4">
+                    <nav className="grid gap-y-4 bg-black text-white">
                       {menuItems.map((item) => (
                         <Link
                           key={item.name}

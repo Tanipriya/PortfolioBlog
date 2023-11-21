@@ -15,6 +15,7 @@ const DashBoard = () => {
           <Resume />
           <Contact />
           <Footer />
+          <h1 className="text-white text-center pb-5 pt-4">Copyright © 2023 Tanisha Priya</h1>
         </div>
       </div>
     </>

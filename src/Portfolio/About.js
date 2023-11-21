@@ -9,10 +9,10 @@ const About = () => {
   return (
     <>
         <div className="bg-[#0D2438] p-5 font-roboto flex md:flex-row flex-col-reverse items-center justify-between m-2 mt-5 pb-7 w-full">
-          <div className="flex flex-col w-full md:w-1/2 mt-10 md:mt-0  justify-center items-center md:items-start sm:ml-5 text-white xs:w-full">
-            <h1 className="font-medium mb-4 text-2xl md:text-4xl ">I am Tanisha Priya</h1>
-            <h1 className="text-2xl md:text-4xl mb-6 " > A Software <span className="text-[#6C63FF]">Developer.</span></h1>
-            <button className=" md:pl-7 md:pr-7 pt-2 pb-2 text-xl md:mt-4 font-medium  rounded-lg bg-[#6C63FF] flex items-center justify-center hover:bg-[#8680ec]">
+          <div className="flex flex-col w-full md:w-1/2 mt-20 mb-10 md:mt-0  justify-center items-center md:items-start sm:ml-5 text-white xs:w-full">
+            <h1 className="font-medium mb-4 text-2xl md:text-4xl ">I am <span className="text-[#6C63FF] text-3xl md:text-4xl">Tanisha Priya</span></h1>
+            <h1 className="text-2xl md:text-4xl mb-6 " > A Software <span className="text-[#6C63FF] text-3xl md:text-4xl">Developer.</span></h1>
+            <button className=" pl-7 pr-7 pt-2 pb-2 text-xl mt-2 sm:mt-4 font-medium  rounded-lg bg-[#6C63FF] flex items-center justify-center hover:bg-[#8680ec]">
              
               <AiOutlineDownload size={25} />
               <span className="flex p-1  rounded-lg  items-center ml-2">
@@ -34,8 +34,8 @@ const About = () => {
            
           </div>
           
-          <div className="flex  ml-8 mt-5  flex-col w-full md:w-1/2  ">
-            <p className="font-medium text-xs sm:text-base">
+          <div className="flex  p-2 mt-5  flex-col w-full md:w-1/2  ">
+            <p className="font-medium text-xs  sm:text-base text-justify">
               I am a passionate Software Developer currently working at Garuda
               Mart India Pvt. Ltd. as a part of their dynamic team. My role
               primarily revolves around two exciting projects: Warehouse

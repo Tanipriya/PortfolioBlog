@@ -215,7 +215,7 @@ const skillsDetails = [
                 
                 <div className="w-56 sm:w-80 object-cover">
                   
-                  <h1>{item.img }   </h1>
+                  <div className="w-full">{item.img }   </div>
                   <div className="p-2 sm:p-4 flex flex-col">
                     <h1 className="text-xl mb-1 font-semibold text-white">
                       {item.projectName}
@@ -224,12 +224,8 @@ const skillsDetails = [
                       {
                         item.language.map((lang, index) => (
                           <button className="mt-2 text-xs sm:text-base rounded-md w-24 mr-2 p-1 bg-[#496e97] text-white" key={index}>{lang.title}</button>
-
                         ))
                       }
-                  
-
-
                     </div> 
                   </div>
                 </div>
